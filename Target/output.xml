@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.9.9 on win32)" generated="20231014 10:01:40.862" rpa="false" schemaversion="4">
+<suite id="s1" name="Hello" source="C:\Users\AYMEN\Desktop\robotFrameworkzied\tests\hello.robot">
+<test id="s1-t1" name="Open chrome" line="14">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20231014 10:01:41.126" level="INFO">Opening browser 'Chrome' to base url 'http://www.google.com'.</msg>
+<msg timestamp="20231014 10:01:41.658" level="WARN">The chromedriver version (116.0.5845.96) detected in PATH at C:\Users\AYMEN\PycharmProjects\pythonProject\venv\Scripts\chromedriver.exe might not be compatible with the detected chrome version (118.0.5993.71); currently, chromedriver 118.0.5993.70 is recommended for chrome 118.*, so it is advised to delete the driver in PATH and retry</msg>
+<msg timestamp="20231014 10:01:45.068" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg timestamp="20231014 10:01:45.068" level="FAIL">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 116
+Current browser version is 118.0.5993.71 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Stacktrace:
+	GetHandleVerifier [0x006037C3+48947]
+	(No symbol) [0x00598551]
+	(No symbol) [0x0049C92D]
+	(No symbol) [0x004BF180]
+	(No symbol) [0x004BB178]
+	(No symbol) [0x004B950E]
+	(No symbol) [0x004EB840]
+	(No symbol) [0x004EB3CC]
+	(No symbol) [0x004E4E86]
+	(No symbol) [0x004C16C7]
+	(No symbol) [0x004C284D]
+	GetHandleVerifier [0x0084FDF9+2458985]
+	GetHandleVerifier [0x0089744F+2751423]
+	GetHandleVerifier [0x00891361+2726609]
+	GetHandleVerifier [0x00680680+560624]
+	(No symbol) [0x005A238C]
+	(No symbol) [0x0059E268]
+	(No symbol) [0x0059E392]
+	(No symbol) [0x005910B7]
+	BaseThreadInitThunk [0x76637BA9+25]
+	RtlInitializeExceptionChain [0x76F9BD3B+107]
+	RtlClearBits [0x76F9BCBF+191]
+</msg>
+<status status="FAIL" starttime="20231014 10:01:41.126" endtime="20231014 10:01:45.068"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20231014 10:01:45.068" endtime="20231014 10:01:45.068"/>
+</kw>
+<doc>openning browser</doc>
+<status status="FAIL" starttime="20231014 10:01:41.126" endtime="20231014 10:01:45.068">SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 116
+Current browser version is 118.0.5993.71 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Stacktrace:
+	GetHandleVerifier [0x006037C3+48947]
+	(No symbol) [0x00598551]
+	(No symbol) [0x0049C92D]
+	(No symbol) [0x004BF180]
+	(No symbol) [0x004BB178]
+	(No symbol) [0x004B950E]
+	(No symbol) [0x004EB840]
+	(No symbol) [0x004EB3CC]
+	(No symbol) [0x004E4E86]
+	(No symbol) [0x004C16C7]
+	(No symbol) [0x004C284D]
+	GetHandleVerifier [0x0084FDF9+2458985]
+	GetHandleVerifier [0x0089744F+2751423]
+	GetHandleVerifier [0x00891361+2726609]
+	GetHandleVerifier [0x00680680+560624]
+	(No symbol) [0x005A238C]
+	(No symbol) [0x0059E268]
+	(No symbol) [0x0059E392]
+	(No symbol) [0x005910B7]
+	BaseThreadInitThunk [0x76637BA9+25]
+	RtlInitializeExceptionChain [0x76F9BD3B+107]
+	RtlClearBits [0x76F9BCBF+191]
+</status>
+</test>
+<doc>Sample Test case Zied Hannachi</doc>
+<status status="FAIL" starttime="20231014 10:01:40.864" endtime="20231014 10:01:45.083"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Hello">Hello</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20231014 10:01:41.658" level="WARN">The chromedriver version (116.0.5845.96) detected in PATH at C:\Users\AYMEN\PycharmProjects\pythonProject\venv\Scripts\chromedriver.exe might not be compatible with the detected chrome version (118.0.5993.71); currently, chromedriver 118.0.5993.70 is recommended for chrome 118.*, so it is advised to delete the driver in PATH and retry</msg>
+</errors>
+</robot>
